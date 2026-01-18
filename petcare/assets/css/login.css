@@ -1,0 +1,88 @@
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(to bottom, #dfeafe, #ffffff);
+  height: 100vh;
+}
+
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.login-box {
+  background: white;
+  padding: 30px 40px;
+  width: 380px;
+  border-radius: 20px;
+  box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+
+.login-box h1 {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #4b6fff;
+}
+
+label {
+  font-size: 14px;
+  color: #444;
+}
+
+input,
+.form-control {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0 15px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+}
+
+/* --- Tombol Login --- */
+button,
+.btn {
+  width: 100%;
+  padding: 12px;
+  background: #f8d94c;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* Hover effect */
+button:hover,
+.btn:hover {
+  background: #e8c63e;
+}
+
+/* Error message */
+.error {
+  color: red;
+  margin-bottom: 10px;
+  font-size: 13px;
+  text-align: center;
+}
+
+/* Bootstrap card fix */
+.card {
+  border: none;
+  border-radius: 20px;
+}
+
+/* --- RESPONSIVE MOBILE --- */
+@media (max-width: 600px) {
+  .login-box {
+    width: 90% !important;
+    padding: 20px !important;
+  }
+
+  .login-container {
+    padding: 20px;
+    height: auto;
+  }
+}
